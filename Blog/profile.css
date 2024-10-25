@@ -1,0 +1,137 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Assistant, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f6;
+}
+
+header {
+    display: flex;
+    background-color: #87CEEB;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #677b84;
+}
+
+.pagebreeze_home {
+    height: 67px;
+    width: 67px;
+}
+
+.nav_bar {
+    display: flex;
+    min-width: 900px;
+    justify-content: space-evenly;
+}
+
+.nav_bar a {
+    font-size: 16px;
+    color: #282c3f;
+    font-weight: 750;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 20px 0;
+    border-bottom: 5px solid #87CEEB;
+}
+
+.nav_bar a:hover {
+    border-bottom: 5px solid #ff00c3;
+}
+
+.action_bar {
+    display: flex;
+    min-width: 130px;
+    justify-content: space-evenly;
+    margin-right: 2%;
+}
+
+.action_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bag-item-count {
+    background-color: #f16565;
+    white-space: nowrap;
+    text-align: center;
+    line-height: 18px;
+    padding: 0 6px;
+    height: 18px;
+    position: relative;
+    border-radius: 50%;
+    font-size: 12px;
+    color: #fff;
+    left: 13px;
+    top: -44px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.profile-container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.profile-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 5px 0;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.save-btn {
+    background-color: #90ee90;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #282c3f;
+    color: #94969f;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.visitagain {
+    margin-bottom: 10px;
+}

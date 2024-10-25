@@ -1,0 +1,83 @@
+
+#header{
+    display:flex;
+    background:#cbebaf;
+   text-align: center;
+   justify-content: center;
+}
+.h{
+    padding-right: 30px;
+    padding-left: 30px;
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#heading{
+    padding-top: 70px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom ,#cbebaf,rgb(244, 252, 197));
+    padding-bottom: 20px;
+}
+#search{
+  height:50px;
+  width:30%;
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-left: 35%;
+}
+button{
+    height:60px;
+    width:60px;
+    background-color: rgb(210, 119, 103);
+    margin-top: 70%;
+    margin-left: 95%;
+    border-radius: 25px;
+    font-size: xx-large;
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.article {
+    max-width: 800px;
+    width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+.title {
+    font-size: 26px;
+    font-weight: bold;
+}
+.subtitle {
+    font-size: 18px;
+    color: rgb(41, 41, 41);
+    margin-top: 5px;
+}
+.author {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.author img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.author-info {
+    font-size: 14px;
+}
+.date {
+    text-align: left;
+    color: gray;
+    font-size: 12px;
+}
+#content{
+    padding-top: 30px;
+    margin-left: 23%;
+}

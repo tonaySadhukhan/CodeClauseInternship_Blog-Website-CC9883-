@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Your Blog - Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#header{
+    display:flex;
+    background:#cbebaf;
+   text-align: center;
+   justify-content: center;
+}
+.h{
+    padding-right: 30px;
+    padding-left: 30px;
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#heading{
+    padding-top: 70px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom ,#cbebaf,rgb(244, 252, 197));
+    padding-bottom: 20px;
+}
+
+nav ul {
+    background: #444;
+    padding: 0.5rem;
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#projects {
+    padding: 2rem 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    background: #fff;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    margin-bottom: 1rem;
+}
+
+.project p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    background: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+    </style>
+     <header id="header">
+        <img src="Screenshot 2024-10-24 192041.png" style="height:70px; width: 90px;">
+        <H1 class="h" style="padding-top:10px">Tech Gossip</H1>
+        <a href="Blog.html"> <h4 class="h" style="padding-top:10px">Home</h4></a>
+        <a href="Today.html"> <h4 class="h" style="padding-top:10px">Today</h4></a>
+        <h4 class="h" style="padding-top:10px">Projects</h4>
+ 
+      <a href="profile.html"><img src="3135715.png" style="border: 1px solid black; height:50px; width: 50px; border-radius: 25px;" id="profile"></a>
+     </header>
+
+
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-list">
+                <div class="project">
+                    <h3>Online Examination System</h3>
+                    <p>A secure online exam platform with MCQ auto-submit, login system, and session management.</p>
+                    <a href="https://github.com/tonaySadhukhan/online-examination-system-oasis-infobyte-task-4-" class="btn">View Project</a>
+                </div>
+
+                <div class="project-list">
+                    <div class="project">
+                        <h3>Brick-Out-Ball Game</h3>
+                        <p>A secure online exam platform with MCQ auto-submit, login system, and session management.</p>
+                        <a href="https://github.com/tonaySadhukhan/Brick-out-Ball-game" class="btn">View Project</a>
+                    </div>
+
+              
+
+                <div class="project">
+                    <h3>ATM Interface</h3>
+                    <p>This is a professional looking brick breaker game made by me using java swing, awt </p>
+                    <a href="https://github.com/tonaySadhukhan/Atm-oasis-infobyte-task-3-" class="btn">View Project</a>
+                </div>
+
+                <div class="project">
+                    <h3>Number Guessing Game</h3>
+                    <p>A console-based game where the player guesses a randomly generated number.</p>
+                    <a href="https://github.com/tonaySadhukhan/Number-guessing-game-oasis-infobyte-task-2-" class="btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="blog.js">
+    </script>
+    <footer>
+        <p>© 2024 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>

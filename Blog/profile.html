@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - PageBreeze</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Blog.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <header id="header">
+        <img src="Screenshot 2024-10-24 192041.png" style="height:70px; width: 90px;">
+        <H1 class="h" style="padding-top:10px">Tech Gossip</H1>
+       <a href="Blog.html"> <h4 class="h" style="padding-top:10px">Home</h4></a>
+        <h4 class="h" style="padding-top:10px">Today</h4>
+        <h4 class="h" style="padding-top:10px">Projects</h4>
+ 
+      <img src="3135715.png" style="border: 1px solid black; height:50px; width: 50px; border-radius: 25px;" id="profile">
+     </header>
+
+    <main>
+        <div class="profile-container">
+            <h2>User Profile</h2>
+            <div class="profile-info">
+                <img id="profile-picture" src="3135715.png" alt="Profile Picture">
+                <div class="user-details">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" placeholder="Enter your username" />
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email" />
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number" />
+                </div>
+            </div>
+            <label>Select your profile picture:</label>
+            <input type="file" id="myfile" accept="image/*">
+            <div class="save-btn" onclick="saveProfile()">Save Changes</div>
+        </div>
+    </main>
+
+<script>
+   
+    document.getElementById("myfile").addEventListener("change", function(event) {
+        const file = event.target.files[0];  // Get the first selected file
+
+        if (file) {
+            const reader = new FileReader();
+
+            // When the file is loaded, set the image source to the loaded file
+            reader.onload = function(e) {
+                console.log(e.target.result);
+                document.getElementById("profile-picture").src = e.target.result;
+                document.getElementById("profile").src = e.target.result;
+                let x={
+                    img:e.target.result
+                }
+                localStorage.setItem('image', JSON.stringify(x));
+            }
+
+            reader.readAsDataURL(file);  // Read the file as a Data URL
+        }
+    });
+</script>
+    <script src="blog.js"></script>
+</body>
+</html>
